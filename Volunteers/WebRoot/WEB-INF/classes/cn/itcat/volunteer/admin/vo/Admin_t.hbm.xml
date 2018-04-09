@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    
+    	<class name="cn.itcat.volunteer.admin.vo.Admin_t" table="admin_t">
+    		<id name="admin_uid" column="admin_uid">
+			<generator class="native"/>
+			</id>
+		
+			<property name="admin_name" column="admin_name"/>
+			<property name="admin_ps" column="admin_ps"/>
+			<property name="admin_p" column="admin_p"/>
+			<property name="admin_dept" column="admin_dept"/>
+		</class>
+	</hibernate-mapping>
+			

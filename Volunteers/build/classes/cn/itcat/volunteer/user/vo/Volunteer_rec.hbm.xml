@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    
+    	<class name="cn.itcat.volunteer.user.vo.Volunteer_rec" table="Volunteer_rec">
+    		<id name="uid" column="uid">
+				<generator class="native"/>
+			</id>
+			<property name="Volunteer_rec_aid" column="Volunteer_rec_aid" />
+			<property name="Volunteer_rec_vid" column="Volunteer_rec_vid"/>
+			<property name="Volunteer_rec_date" column="Volunteer_rec_date"/>
+		</class>
+	</hibernate-mapping>
+			

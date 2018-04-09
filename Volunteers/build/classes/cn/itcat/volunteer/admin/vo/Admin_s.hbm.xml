@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    
+    	<class name="cn.itcat.volunteer.admin.vo.Admin_s" table="admin_s">
+    		<id name="s_uid" column="s_uid">
+			<generator class="native"/>
+			</id>
+		
+			<property name="s_type" column="s_type"/>
+			<property name="s_details" column="s_details"/>
+			<property name="s_confirm" column="s_confirm"/>
+			<property name="s_admin_uid" column="s_admin_uid"/>
+			<property name="s_admin_date" column="s_admin_date"/>
+		</class>
+	</hibernate-mapping>
+			

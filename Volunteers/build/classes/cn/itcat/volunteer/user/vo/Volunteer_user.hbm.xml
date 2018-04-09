@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+	<class name="cn.itcat.volunteer.user.vo.Volunteer_user" table="volunteer">
+		<id name="volunteer_uid" column="volunteer_uid">
+			<generator class="native"/>
+		</id>
+		<property name="volunteer_stuid" column="volunteer_stuid"/>
+		<property name="volunteer_name" column="volunteer_name"/>
+		<property name="volunteer_ps" column="volunteer_ps"/>
+		<property name="volunteer_sex" column="volunteer_sex"/>
+		<property name="volunteer_s" column="volunteer_s"/>
+		<property name="volunteer_c" column="volunteer_c"/>
+		<property name="volunteer_p" column="volunteer_p"/>
+		<property name="volunteer_type" column="volunteer_type"/>
+		<property name="volunteer_like" column="volunteer_like"/>
+	
+	</class>
+</hibernate-mapping>

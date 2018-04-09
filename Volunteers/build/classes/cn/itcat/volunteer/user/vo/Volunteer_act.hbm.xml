@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    
+    	<class name="cn.itcat.volunteer.user.vo.Volunteer_act" table="Volunteer_act">
+    		<id name="Volunteer_act_uid" column="Volunteer_act_uid">
+			<generator class="native"/>
+			</id>
+		
+			<property name="Volunteer_act_name" column="Volunteer_act_name"/>
+			<property name="Volunteer_act_core" column="Volunteer_act_core"/>
+			<property name="Volunteer_act_spo" column="Volunteer_act_spo"/>
+			<property name="Volunteer_act_date" column="Volunteer_act_date"/>
+			<property name="Volunteer_act_site" column="Volunteer_act_site"/>
+			<property name="Volunteer_act_flow" column="Volunteer_act_flow"/>
+			<property name="Volunteer_act_mans" column="Volunteer_act_mans"/>
+			<property name="Volunteer_act_status" column="Volunteer_act_status"/>
+    	</class>
+    </hibernate-mapping>

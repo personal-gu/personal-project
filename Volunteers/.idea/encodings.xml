@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/admin/action/Admin_sAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/admin/action/Admin_tAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/admin/vo/Admin_t.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/index/action/IndexAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/user/action/Volunteer_actAction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/user/dao/Volunteer_actDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/user/dao/Volunteer_userDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/user/service/Volunteer_actService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/user/service/Volunteer_recService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/itcat/volunteer/user/service/Volunteer_userService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/wakeboy/general/controller/BaseControler.java" charset="GBK" />
+  </component>
+</project>

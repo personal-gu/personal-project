@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="false" />
+    	<package name="shop" extends="struts-default" namespace="/">
+    		
+	
+		<!-- 配置首页访问的Action -->
+		<action name="index" class="indexAction" >
+			<result name="goLogin">/WEB-INF/jsp/login.jsp</result>
+		</action>
+    	
+    	<!--配置用户模块的action  -->
+    	<action name="user_*" class="volunteer_userAction" method="{1}">
+			<result name="registPage">/WEB-INF/jsp/register.jsp</result>
+			<result name="goLogin">/WEB-INF/jsp/login.jsp</result>
+			<result name="goIndex" type="redirect">act_init</result>
+			<result name="goAdmin" type="redirect">t_systemLogin</result>
+			<result name="goCheckUser">/WEB-INF/admin/admin_checkUser.jsp</result>
+			<result name="goCheckUserPage">/WEB-INF/admin/admin_checkUser.jsp</result>
+			<result name="goQueryUser" type="redirect">user_checkUser</result>
+			<result name="editUser">/WEB-INF/admin/admin_editUser.jsp</result>
+			<result name="Info">/WEB-INF/jsp/info.jsp</result>
+			<result name="userForAct">/WEB-INF/jsp/uAct.jsp</result>
+			<result name="adminVA">/WEB-INF/admin/admin_VA.jsp</result>
+		</action>
+		
+		<!-- 配置活动模块的action -->
+    	<action name="act_*" class="volunteer_actAction" method="{1}">
+			<result name="goIndex">/WEB-INF/jsp/index.jsp</result>
+			<result name="goEditActWin">/WEB-INF/admin/admin_add_act.jsp</result>
+			<result name="delActAjax">/WEB-INF/admin/admin_act.jsp</result>
+			<result name="goAdminAct">/WEB-INF/admin/admin_act.jsp</result>
+		</action>
+		
+		<!-- 配置报名模块的action -->
+    	<action name="rec_*" class="volunteer_recAction" method="{1}">
+			
+		</action>
+		
+		<!-- 配置管理员表action -->
+    	<action name="t_*" class="admin_tAction" method="{1}">
+			<result name="goAdminIndex">/WEB-INF/admin/admin_index.jsp</result>
+			<result name="goLogin">/WEB-INF/jsp/login.jsp</result>
+			<result name="goAct">/WEB-INF/admin/admin_act.jsp</result>
+			<result name="goAddActWin">/WEB-INF/admin/admin_add_act.jsp</result>
+			<result name="admin_t">/WEB-INF/admin/admin_t.jsp</result>
+			<result name="addAdmint">/WEB-INF/admin/addAdmint.jsp</result>
+			
+		</action>
+		
+		<!-- 配置管理员事务待处理表action -->
+    	<action name="s_*" class="admin_sAction" method="{1}">
+			
+		</action>
+
+    	</package>
+
+</struts>
